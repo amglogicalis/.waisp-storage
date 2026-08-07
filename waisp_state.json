@@ -7,8 +7,8 @@
       "url": "https://amglogicalis.github.io/webbl-repo-public/",
       "environment": "production",
       "provider": "terra",
-      "createdAt": "2026-08-07T14:17:47.610Z",
-      "updatedAt": "2026-08-07T14:17:47.611Z"
+      "createdAt": "2026-08-07T14:57:00.301Z",
+      "updatedAt": "2026-08-07T14:57:00.301Z"
     },
     "target-ballom-cdn": {
       "id": "target-ballom-cdn",
@@ -374,9 +374,120 @@
       "status": "open",
       "createdAt": "2026-08-07T14:49:54.556Z",
       "updatedAt": "2026-08-07T14:49:54.556Z"
+    },
+    "recon-missing-headers-yceije8": {
+      "id": "recon-missing-headers-yceije8",
+      "targetId": "target-webbl-prod",
+      "targetUrl": "https://amglogicalis.github.io/webbl-repo-public/",
+      "title": "Missing Security Headers: Content-Security-Policy (CSP), X-Frame-Options, X-Content-Type-Options",
+      "severity": "MEDIUM",
+      "cvssScore": 5.3,
+      "stingerModule": "recon",
+      "description": "El objetivo no expone las siguientes cabeceras de seguridad fundamentales: Content-Security-Policy (CSP), X-Frame-Options, X-Content-Type-Options.",
+      "evidence": {
+        "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
+        "statusCode": 200
+      },
+      "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
+      "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
+      "remediationSteps": [
+        "Añadir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "Añadir X-Frame-Options: DENY",
+        "Añadir X-Content-Type-Options: nosniff"
+      ],
+      "status": "open",
+      "createdAt": "2026-08-07T14:57:01.307Z",
+      "updatedAt": "2026-08-07T14:57:01.307Z"
+    },
+    "recon-cors-wildcard-mbe3g1s": {
+      "id": "recon-cors-wildcard-mbe3g1s",
+      "targetId": "target-webbl-prod",
+      "targetUrl": "https://amglogicalis.github.io/webbl-repo-public/",
+      "title": "Wildcard CORS Origin Allowed (*)",
+      "severity": "MEDIUM",
+      "cvssScore": 6.5,
+      "stingerModule": "recon",
+      "description": "La cabecera Access-Control-Allow-Origin está configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+      "evidence": {
+        "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
+        "statusCode": 200
+      },
+      "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
+      "suggestedPatch": "Restringir los orígenes CORS permitidos en la configuración de la API.",
+      "remediationSteps": [
+        "Configurar orígenes específicos en Access-Control-Allow-Origin."
+      ],
+      "status": "open",
+      "createdAt": "2026-08-07T14:57:01.307Z",
+      "updatedAt": "2026-08-07T14:57:01.307Z"
     }
   },
   "scans": [
+    {
+      "id": "scan-ydc56b3",
+      "targetUrl": "https://amglogicalis.github.io/webbl-repo-public/",
+      "status": "completed",
+      "startTime": "2026-08-07T14:57:00.965Z",
+      "endTime": "2026-08-07T14:57:01.804Z",
+      "durationMs": 839,
+      "vulnerabilities": [
+        {
+          "id": "recon-missing-headers-yceije8",
+          "targetId": "target-webbl-prod",
+          "targetUrl": "https://amglogicalis.github.io/webbl-repo-public/",
+          "title": "Missing Security Headers: Content-Security-Policy (CSP), X-Frame-Options, X-Content-Type-Options",
+          "severity": "MEDIUM",
+          "cvssScore": 5.3,
+          "stingerModule": "recon",
+          "description": "El objetivo no expone las siguientes cabeceras de seguridad fundamentales: Content-Security-Policy (CSP), X-Frame-Options, X-Content-Type-Options.",
+          "evidence": {
+            "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
+            "statusCode": 200
+          },
+          "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
+          "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
+          "remediationSteps": [
+            "Añadir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+            "Añadir X-Frame-Options: DENY",
+            "Añadir X-Content-Type-Options: nosniff"
+          ],
+          "status": "open",
+          "createdAt": "2026-08-07T14:57:01.307Z",
+          "updatedAt": "2026-08-07T14:57:01.307Z"
+        },
+        {
+          "id": "recon-cors-wildcard-mbe3g1s",
+          "targetId": "target-webbl-prod",
+          "targetUrl": "https://amglogicalis.github.io/webbl-repo-public/",
+          "title": "Wildcard CORS Origin Allowed (*)",
+          "severity": "MEDIUM",
+          "cvssScore": 6.5,
+          "stingerModule": "recon",
+          "description": "La cabecera Access-Control-Allow-Origin está configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+          "evidence": {
+            "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
+            "statusCode": 200
+          },
+          "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
+          "suggestedPatch": "Restringir los orígenes CORS permitidos en la configuración de la API.",
+          "remediationSteps": [
+            "Configurar orígenes específicos en Access-Control-Allow-Origin."
+          ],
+          "status": "open",
+          "createdAt": "2026-08-07T14:57:01.307Z",
+          "updatedAt": "2026-08-07T14:57:01.307Z"
+        }
+      ],
+      "summary": {
+        "total": 2,
+        "critical": 0,
+        "high": 0,
+        "medium": 2,
+        "low": 0,
+        "info": 0,
+        "cvssMax": 6.5
+      }
+    },
     {
       "id": "scan-rbnmmhl",
       "targetUrl": "https://amglogicalis.github.io/ballom-repo-public/",
@@ -795,5 +906,5 @@
       "createdAt": "2026-08-07T11:25:00.646Z"
     }
   },
-  "updatedAt": "2026-08-07T14:17:51.187Z"
+  "updatedAt": "2026-08-07T14:57:01.804Z"
 }
