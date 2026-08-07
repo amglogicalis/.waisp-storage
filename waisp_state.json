@@ -791,11 +791,8 @@
       "targetUrl": "https://amglogicalis.github.io/webbl-repo-public/",
       "canaryToken": "waisp_canary_9gsmjho4bl_1786101900646",
       "callbackUrl": "https://waisp-canary.terra.internal/probe/waisp_canary_9gsmjho4bl_1786101900646",
-      "status": "triggered",
-      "createdAt": "2026-08-07T11:25:00.646Z",
-      "triggeredAt": "2026-08-07T14:49:54.556Z",
-      "sourceIp": "198.51.100.42 (Simulated Out-of-Band Callback)",
-      "userAgent": "Mozilla/5.0 (WAISP Active Canary Test Probe)"
+      "status": "armed",
+      "createdAt": "2026-08-07T11:25:00.646Z"
     }
   },
   "updatedAt": "2026-08-07T14:17:51.187Z"
