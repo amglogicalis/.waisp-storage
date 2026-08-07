@@ -16,8 +16,8 @@
       "url": "https://amglogicalis.github.io/ballom-repo-public/",
       "environment": "production",
       "provider": "terra",
-      "createdAt": "2026-08-07T14:57:00.301Z",
-      "updatedAt": "2026-08-07T14:57:00.301Z"
+      "createdAt": "2026-08-07T14:57:20.877Z",
+      "updatedAt": "2026-08-07T14:57:20.877Z"
     },
     "target-aws-staging": {
       "id": "target-aws-staging",
@@ -512,9 +512,120 @@
       "status": "open",
       "createdAt": "2026-08-07T14:57:21.737Z",
       "updatedAt": "2026-08-07T14:57:21.737Z"
+    },
+    "recon-missing-headers-43p0p9z": {
+      "id": "recon-missing-headers-43p0p9z",
+      "targetId": "target-ballom-cdn",
+      "targetUrl": "https://amglogicalis.github.io/ballom-repo-public/",
+      "title": "Missing Security Headers: Content-Security-Policy (CSP), X-Frame-Options, X-Content-Type-Options",
+      "severity": "MEDIUM",
+      "cvssScore": 5.3,
+      "stingerModule": "recon",
+      "description": "El objetivo no expone las siguientes cabeceras de seguridad fundamentales: Content-Security-Policy (CSP), X-Frame-Options, X-Content-Type-Options.",
+      "evidence": {
+        "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
+        "statusCode": 200
+      },
+      "pocMarkdown": "curl -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
+      "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
+      "remediationSteps": [
+        "Añadir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "Añadir X-Frame-Options: DENY",
+        "Añadir X-Content-Type-Options: nosniff"
+      ],
+      "status": "open",
+      "createdAt": "2026-08-07T14:57:24.132Z",
+      "updatedAt": "2026-08-07T14:57:24.132Z"
+    },
+    "recon-cors-wildcard-onji0jt": {
+      "id": "recon-cors-wildcard-onji0jt",
+      "targetId": "target-ballom-cdn",
+      "targetUrl": "https://amglogicalis.github.io/ballom-repo-public/",
+      "title": "Wildcard CORS Origin Allowed (*)",
+      "severity": "MEDIUM",
+      "cvssScore": 6.5,
+      "stingerModule": "recon",
+      "description": "La cabecera Access-Control-Allow-Origin está configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+      "evidence": {
+        "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
+        "statusCode": 200
+      },
+      "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
+      "suggestedPatch": "Restringir los orígenes CORS permitidos en la configuración de la API.",
+      "remediationSteps": [
+        "Configurar orígenes específicos en Access-Control-Allow-Origin."
+      ],
+      "status": "open",
+      "createdAt": "2026-08-07T14:57:24.132Z",
+      "updatedAt": "2026-08-07T14:57:24.132Z"
     }
   },
   "scans": [
+    {
+      "id": "scan-0r8by4n",
+      "targetUrl": "https://amglogicalis.github.io/ballom-repo-public/",
+      "status": "completed",
+      "startTime": "2026-08-07T14:57:24.114Z",
+      "endTime": "2026-08-07T14:57:24.155Z",
+      "durationMs": 41,
+      "vulnerabilities": [
+        {
+          "id": "recon-missing-headers-43p0p9z",
+          "targetId": "target-ballom-cdn",
+          "targetUrl": "https://amglogicalis.github.io/ballom-repo-public/",
+          "title": "Missing Security Headers: Content-Security-Policy (CSP), X-Frame-Options, X-Content-Type-Options",
+          "severity": "MEDIUM",
+          "cvssScore": 5.3,
+          "stingerModule": "recon",
+          "description": "El objetivo no expone las siguientes cabeceras de seguridad fundamentales: Content-Security-Policy (CSP), X-Frame-Options, X-Content-Type-Options.",
+          "evidence": {
+            "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
+            "statusCode": 200
+          },
+          "pocMarkdown": "curl -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
+          "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
+          "remediationSteps": [
+            "Añadir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+            "Añadir X-Frame-Options: DENY",
+            "Añadir X-Content-Type-Options: nosniff"
+          ],
+          "status": "open",
+          "createdAt": "2026-08-07T14:57:24.132Z",
+          "updatedAt": "2026-08-07T14:57:24.132Z"
+        },
+        {
+          "id": "recon-cors-wildcard-onji0jt",
+          "targetId": "target-ballom-cdn",
+          "targetUrl": "https://amglogicalis.github.io/ballom-repo-public/",
+          "title": "Wildcard CORS Origin Allowed (*)",
+          "severity": "MEDIUM",
+          "cvssScore": 6.5,
+          "stingerModule": "recon",
+          "description": "La cabecera Access-Control-Allow-Origin está configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+          "evidence": {
+            "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
+            "statusCode": 200
+          },
+          "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
+          "suggestedPatch": "Restringir los orígenes CORS permitidos en la configuración de la API.",
+          "remediationSteps": [
+            "Configurar orígenes específicos en Access-Control-Allow-Origin."
+          ],
+          "status": "open",
+          "createdAt": "2026-08-07T14:57:24.132Z",
+          "updatedAt": "2026-08-07T14:57:24.132Z"
+        }
+      ],
+      "summary": {
+        "total": 2,
+        "critical": 0,
+        "high": 0,
+        "medium": 2,
+        "low": 0,
+        "info": 0,
+        "cvssMax": 6.5
+      }
+    },
     {
       "id": "scan-woe4aql",
       "targetUrl": "https://amglogicalis.github.io/webbl-repo-public/",
@@ -1128,5 +1239,5 @@
       "createdAt": "2026-08-07T11:25:00.646Z"
     }
   },
-  "updatedAt": "2026-08-07T14:57:22.066Z"
+  "updatedAt": "2026-08-07T14:57:24.155Z"
 }
