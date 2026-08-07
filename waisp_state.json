@@ -235,6 +235,28 @@
       "status": "open",
       "createdAt": "2026-08-07T11:42:17.045Z",
       "updatedAt": "2026-08-07T11:42:17.045Z"
+    },
+    "vuln-web-u3tjto1": {
+      "id": "vuln-web-u3tjto1",
+      "targetId": "target-webbl-prod",
+      "targetUrl": "https://amglogicalis.github.io/webbl-repo-public/",
+      "title": "Security Headers Inspection (CSP & HSTS Check)",
+      "severity": "MEDIUM",
+      "cvssScore": 5.3,
+      "stingerModule": "recon",
+      "description": "Reconnaissance audit completed for target endpoint.",
+      "evidence": {
+        "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
+        "statusCode": 200
+      },
+      "suggestedPatch": "Configure HSTS and CSP headers on host.",
+      "remediationSteps": [
+        "Add HSTS header",
+        "Add CSP header"
+      ],
+      "status": "open",
+      "createdAt": "2026-08-07T11:51:15.541Z",
+      "updatedAt": "2026-08-07T11:51:15.541Z"
     }
   },
   "scans": [
