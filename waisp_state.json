@@ -1380,7 +1380,7 @@
     }
   },
   "colonySubscription": {
-    "isSubscribed": true,
+    "isSubscribed": false,
     "subscribedAt": "2026-08-07T23:26:44.334Z",
     "anonymousId": "waisp_anon_7flpyk8c",
     "localImmunityRules": {}
@@ -1398,5 +1398,5 @@
       "timestamp": "2026-08-07T23:26:44.335Z"
     }
   },
-  "updatedAt": "2026-08-07T23:26:44.371Z"
+  "updatedAt": "2026-08-07T23:26:56.277Z"
 }
