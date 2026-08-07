@@ -4,11 +4,11 @@
     "target-webbl-prod": {
       "id": "target-webbl-prod",
       "name": "WEBBL Public Web Console (Terra Ecosystem)",
-      "url": "https://amglogicalis.github.io/webbl-repo-public/",
-      "environment": "production",
+      "url": "https://amglogicalis.github.io/webbl-repo-public",
+      "environment": "local",
       "provider": "terra",
       "createdAt": "2026-08-07T14:57:20.877Z",
-      "updatedAt": "2026-08-07T14:57:20.877Z"
+      "updatedAt": "2026-08-07T16:44:32.764Z"
     },
     "target-ballom-cdn": {
       "id": "target-ballom-cdn",
