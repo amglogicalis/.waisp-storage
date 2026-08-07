@@ -558,6 +558,31 @@
       "status": "open",
       "createdAt": "2026-08-07T14:57:24.132Z",
       "updatedAt": "2026-08-07T14:57:24.132Z"
+    },
+    "vuln-canary-2q7oawg": {
+      "id": "vuln-canary-2q7oawg",
+      "targetId": "canary-0oan7cf",
+      "targetUrl": "https://amglogicalis.github.io/webbl-repo-public/",
+      "title": "🚨 Out-of-Band Data Exfiltration Confirmed (NectarCanary: waisp_canary_9gsmjho4bl_1786101900646)",
+      "severity": "CRITICAL",
+      "cvssScore": 10,
+      "stingerModule": "dast",
+      "description": "NectarCanary active probe triggered! Remote server executed out-of-band request to callback https://waisp-canary.terra.internal/probe/waisp_canary_9gsmjho4bl_1786101900646.",
+      "evidence": {
+        "endpoint": "https://waisp-canary.terra.internal/probe/waisp_canary_9gsmjho4bl_1786101900646",
+        "statusCode": 200,
+        "headers": {
+          "X-WAISP-Canary-Trigger": "waisp_canary_9gsmjho4bl_1786101900646"
+        }
+      },
+      "suggestedPatch": "Sanitize server-side inputs to prevent SSRF and out-of-band HTTP requests.",
+      "remediationSteps": [
+        "Disable remote URL fetch",
+        "Enforce strict domain whitelist"
+      ],
+      "status": "open",
+      "createdAt": "2026-08-07T16:42:18.277Z",
+      "updatedAt": "2026-08-07T16:42:18.277Z"
     }
   },
   "scans": [
@@ -1235,8 +1260,11 @@
       "targetUrl": "https://amglogicalis.github.io/webbl-repo-public/",
       "canaryToken": "waisp_canary_9gsmjho4bl_1786101900646",
       "callbackUrl": "https://waisp-canary.terra.internal/probe/waisp_canary_9gsmjho4bl_1786101900646",
-      "status": "armed",
-      "createdAt": "2026-08-07T11:25:00.646Z"
+      "status": "triggered",
+      "createdAt": "2026-08-07T11:25:00.646Z",
+      "triggeredAt": "2026-08-07T16:42:18.277Z",
+      "sourceIp": "198.51.100.42 (Simulated Out-of-Band Callback)",
+      "userAgent": "Mozilla/5.0 (WAISP Active Canary Test Probe)"
     }
   },
   "updatedAt": "2026-08-07T14:57:24.155Z"
