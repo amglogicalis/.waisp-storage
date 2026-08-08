@@ -1495,8 +1495,16 @@
     "isSubscribed": true,
     "subscribedAt": "2026-08-08T18:41:35.267Z",
     "anonymousId": "waisp_anon_a3solq27",
-    "localImmunityRules": {},
-    "appliedRules": {}
+    "localImmunityRules": {
+      "ph_cjauoslc": "BLOCK_SSRF_AWS_METADATA_IP_198.51.X.X"
+    },
+    "appliedRules": {
+      "ph_cjauoslc": {
+        "ruleCode": "# Real Production Security Directive\ndeny 198.51.0.0/16;\nHeader set Content-Security-Policy \"default-src 'self'\";",
+        "appliedAt": "2026-08-08T19:05:43.581Z",
+        "providerSyntax": "Cloudflare WAF / Nginx Security Directives"
+      }
+    }
   },
   "pheromones": {
     "sig-je47pq": {
@@ -1509,7 +1517,7 @@
         "BLOCK_SSRF_AWS_METADATA_IP_198.51.X.X"
       ],
       "timestamp": "2026-08-07T23:26:44.335Z",
-      "isApplied": false
+      "isApplied": true
     },
     "sig-79g8gh": {
       "id": "sig-79g8gh",
@@ -1524,5 +1532,5 @@
       "isApplied": false
     }
   },
-  "updatedAt": "2026-08-08T19:05:38.582Z"
+  "updatedAt": "2026-08-08T19:05:44.146Z"
 }
