@@ -46,9 +46,9 @@
       "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
       "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
       "remediationSteps": [
-        "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-        "AÃ±adir X-Frame-Options: DENY",
-        "AÃ±adir X-Content-Type-Options: nosniff"
+        "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "AÃÂ±adir X-Frame-Options: DENY",
+        "AÃÂ±adir X-Content-Type-Options: nosniff"
       ],
       "status": "open",
       "createdAt": "2026-08-07T11:25:01.510Z",
@@ -62,15 +62,15 @@
       "severity": "MEDIUM",
       "cvssScore": 6.5,
       "stingerModule": "recon",
-      "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+      "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
       "evidence": {
         "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
         "statusCode": 200
       },
       "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
-      "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+      "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
       "remediationSteps": [
-        "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+        "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
       ],
       "status": "open",
       "createdAt": "2026-08-07T11:25:01.510Z",
@@ -92,9 +92,9 @@
       "pocMarkdown": "curl -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
       "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
       "remediationSteps": [
-        "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-        "AÃ±adir X-Frame-Options: DENY",
-        "AÃ±adir X-Content-Type-Options: nosniff"
+        "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "AÃÂ±adir X-Frame-Options: DENY",
+        "AÃÂ±adir X-Content-Type-Options: nosniff"
       ],
       "status": "open",
       "createdAt": "2026-08-07T11:25:03.887Z",
@@ -108,15 +108,15 @@
       "severity": "MEDIUM",
       "cvssScore": 6.5,
       "stingerModule": "recon",
-      "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+      "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
       "evidence": {
         "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
         "statusCode": 200
       },
       "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
-      "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+      "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
       "remediationSteps": [
-        "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+        "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
       ],
       "status": "open",
       "createdAt": "2026-08-07T11:25:03.887Z",
@@ -138,9 +138,9 @@
       "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
       "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
       "remediationSteps": [
-        "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-        "AÃ±adir X-Frame-Options: DENY",
-        "AÃ±adir X-Content-Type-Options: nosniff"
+        "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "AÃÂ±adir X-Frame-Options: DENY",
+        "AÃÂ±adir X-Content-Type-Options: nosniff"
       ],
       "status": "open",
       "createdAt": "2026-08-07T11:25:17.364Z",
@@ -154,15 +154,15 @@
       "severity": "MEDIUM",
       "cvssScore": 6.5,
       "stingerModule": "recon",
-      "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+      "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
       "evidence": {
         "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
         "statusCode": 200
       },
       "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
-      "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+      "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
       "remediationSteps": [
-        "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+        "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
       ],
       "status": "open",
       "createdAt": "2026-08-07T11:25:17.364Z",
@@ -184,9 +184,9 @@
       "pocMarkdown": "curl -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
       "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
       "remediationSteps": [
-        "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-        "AÃ±adir X-Frame-Options: DENY",
-        "AÃ±adir X-Content-Type-Options: nosniff"
+        "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "AÃÂ±adir X-Frame-Options: DENY",
+        "AÃÂ±adir X-Content-Type-Options: nosniff"
       ],
       "status": "open",
       "createdAt": "2026-08-07T11:25:19.830Z",
@@ -200,15 +200,15 @@
       "severity": "MEDIUM",
       "cvssScore": 6.5,
       "stingerModule": "recon",
-      "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+      "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
       "evidence": {
         "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
         "statusCode": 200
       },
       "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
-      "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+      "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
       "remediationSteps": [
-        "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+        "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
       ],
       "status": "open",
       "createdAt": "2026-08-07T11:25:19.830Z",
@@ -274,9 +274,9 @@
       "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
       "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
       "remediationSteps": [
-        "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-        "AÃ±adir X-Frame-Options: DENY",
-        "AÃ±adir X-Content-Type-Options: nosniff"
+        "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "AÃÂ±adir X-Frame-Options: DENY",
+        "AÃÂ±adir X-Content-Type-Options: nosniff"
       ],
       "status": "open",
       "createdAt": "2026-08-07T14:17:48.611Z",
@@ -290,15 +290,15 @@
       "severity": "MEDIUM",
       "cvssScore": 6.5,
       "stingerModule": "recon",
-      "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+      "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
       "evidence": {
         "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
         "statusCode": 200
       },
       "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
-      "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+      "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
       "remediationSteps": [
-        "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+        "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
       ],
       "status": "open",
       "createdAt": "2026-08-07T14:17:48.611Z",
@@ -320,9 +320,9 @@
       "pocMarkdown": "curl -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
       "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
       "remediationSteps": [
-        "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-        "AÃ±adir X-Frame-Options: DENY",
-        "AÃ±adir X-Content-Type-Options: nosniff"
+        "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "AÃÂ±adir X-Frame-Options: DENY",
+        "AÃÂ±adir X-Content-Type-Options: nosniff"
       ],
       "status": "open",
       "createdAt": "2026-08-07T14:17:51.160Z",
@@ -336,15 +336,15 @@
       "severity": "MEDIUM",
       "cvssScore": 6.5,
       "stingerModule": "recon",
-      "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+      "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
       "evidence": {
         "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
         "statusCode": 200
       },
       "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
-      "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+      "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
       "remediationSteps": [
-        "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+        "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
       ],
       "status": "open",
       "createdAt": "2026-08-07T14:17:51.161Z",
@@ -354,7 +354,7 @@
       "id": "vuln-canary-re9ilvm",
       "targetId": "canary-0oan7cf",
       "targetUrl": "https://amglogicalis.github.io/webbl-repo-public/",
-      "title": "ð¨ Out-of-Band Data Exfiltration Confirmed (NectarCanary: waisp_canary_9gsmjho4bl_1786101900646)",
+      "title": "Ã°ÂÂÂ¨ Out-of-Band Data Exfiltration Confirmed (NectarCanary: waisp_canary_9gsmjho4bl_1786101900646)",
       "severity": "CRITICAL",
       "cvssScore": 10,
       "stingerModule": "dast",
@@ -391,9 +391,9 @@
       "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
       "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
       "remediationSteps": [
-        "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-        "AÃ±adir X-Frame-Options: DENY",
-        "AÃ±adir X-Content-Type-Options: nosniff"
+        "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "AÃÂ±adir X-Frame-Options: DENY",
+        "AÃÂ±adir X-Content-Type-Options: nosniff"
       ],
       "status": "open",
       "createdAt": "2026-08-07T14:57:01.307Z",
@@ -407,15 +407,15 @@
       "severity": "MEDIUM",
       "cvssScore": 6.5,
       "stingerModule": "recon",
-      "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+      "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
       "evidence": {
         "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
         "statusCode": 200
       },
       "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
-      "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+      "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
       "remediationSteps": [
-        "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+        "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
       ],
       "status": "open",
       "createdAt": "2026-08-07T14:57:01.307Z",
@@ -437,9 +437,9 @@
       "pocMarkdown": "curl -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
       "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
       "remediationSteps": [
-        "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-        "AÃ±adir X-Frame-Options: DENY",
-        "AÃ±adir X-Content-Type-Options: nosniff"
+        "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "AÃÂ±adir X-Frame-Options: DENY",
+        "AÃÂ±adir X-Content-Type-Options: nosniff"
       ],
       "status": "open",
       "createdAt": "2026-08-07T14:57:04.261Z",
@@ -453,15 +453,15 @@
       "severity": "MEDIUM",
       "cvssScore": 6.5,
       "stingerModule": "recon",
-      "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+      "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
       "evidence": {
         "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
         "statusCode": 200
       },
       "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
-      "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+      "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
       "remediationSteps": [
-        "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+        "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
       ],
       "status": "open",
       "createdAt": "2026-08-07T14:57:04.261Z",
@@ -483,9 +483,9 @@
       "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
       "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
       "remediationSteps": [
-        "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-        "AÃ±adir X-Frame-Options: DENY",
-        "AÃ±adir X-Content-Type-Options: nosniff"
+        "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "AÃÂ±adir X-Frame-Options: DENY",
+        "AÃÂ±adir X-Content-Type-Options: nosniff"
       ],
       "status": "open",
       "createdAt": "2026-08-07T14:57:21.736Z",
@@ -499,15 +499,15 @@
       "severity": "MEDIUM",
       "cvssScore": 6.5,
       "stingerModule": "recon",
-      "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+      "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
       "evidence": {
         "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
         "statusCode": 200
       },
       "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
-      "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+      "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
       "remediationSteps": [
-        "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+        "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
       ],
       "status": "open",
       "createdAt": "2026-08-07T14:57:21.737Z",
@@ -529,9 +529,9 @@
       "pocMarkdown": "curl -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
       "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
       "remediationSteps": [
-        "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-        "AÃ±adir X-Frame-Options: DENY",
-        "AÃ±adir X-Content-Type-Options: nosniff"
+        "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "AÃÂ±adir X-Frame-Options: DENY",
+        "AÃÂ±adir X-Content-Type-Options: nosniff"
       ],
       "status": "open",
       "createdAt": "2026-08-07T14:57:24.132Z",
@@ -545,15 +545,15 @@
       "severity": "MEDIUM",
       "cvssScore": 6.5,
       "stingerModule": "recon",
-      "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+      "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
       "evidence": {
         "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
         "statusCode": 200
       },
       "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
-      "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+      "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
       "remediationSteps": [
-        "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+        "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
       ],
       "status": "open",
       "createdAt": "2026-08-07T14:57:24.132Z",
@@ -563,7 +563,7 @@
       "id": "vuln-canary-2q7oawg",
       "targetId": "canary-0oan7cf",
       "targetUrl": "https://amglogicalis.github.io/webbl-repo-public/",
-      "title": "ð¨ Out-of-Band Data Exfiltration Confirmed (NectarCanary: waisp_canary_9gsmjho4bl_1786101900646)",
+      "title": "Ã°ÂÂÂ¨ Out-of-Band Data Exfiltration Confirmed (NectarCanary: waisp_canary_9gsmjho4bl_1786101900646)",
       "severity": "CRITICAL",
       "cvssScore": 10,
       "stingerModule": "dast",
@@ -600,9 +600,9 @@
       "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
       "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
       "remediationSteps": [
-        "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-        "AÃ±adir X-Frame-Options: DENY",
-        "AÃ±adir X-Content-Type-Options: nosniff"
+        "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "AÃÂ±adir X-Frame-Options: DENY",
+        "AÃÂ±adir X-Content-Type-Options: nosniff"
       ],
       "status": "open",
       "createdAt": "2026-08-07T23:05:34.732Z",
@@ -616,15 +616,15 @@
       "severity": "MEDIUM",
       "cvssScore": 6.5,
       "stingerModule": "recon",
-      "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+      "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
       "evidence": {
         "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
         "statusCode": 200
       },
       "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
-      "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+      "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
       "remediationSteps": [
-        "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+        "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
       ],
       "status": "open",
       "createdAt": "2026-08-07T23:05:34.732Z",
@@ -656,9 +656,9 @@
           "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
           "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
           "remediationSteps": [
-            "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-            "AÃ±adir X-Frame-Options: DENY",
-            "AÃ±adir X-Content-Type-Options: nosniff"
+            "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+            "AÃÂ±adir X-Frame-Options: DENY",
+            "AÃÂ±adir X-Content-Type-Options: nosniff"
           ],
           "status": "open",
           "createdAt": "2026-08-07T23:05:34.732Z",
@@ -672,15 +672,15 @@
           "severity": "MEDIUM",
           "cvssScore": 6.5,
           "stingerModule": "recon",
-          "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+          "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
           "evidence": {
             "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
             "statusCode": 200
           },
           "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
-          "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+          "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
           "remediationSteps": [
-            "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+            "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
           ],
           "status": "open",
           "createdAt": "2026-08-07T23:05:34.732Z",
@@ -722,9 +722,9 @@
           "pocMarkdown": "curl -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
           "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
           "remediationSteps": [
-            "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-            "AÃ±adir X-Frame-Options: DENY",
-            "AÃ±adir X-Content-Type-Options: nosniff"
+            "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+            "AÃÂ±adir X-Frame-Options: DENY",
+            "AÃÂ±adir X-Content-Type-Options: nosniff"
           ],
           "status": "open",
           "createdAt": "2026-08-07T14:57:24.132Z",
@@ -738,15 +738,15 @@
           "severity": "MEDIUM",
           "cvssScore": 6.5,
           "stingerModule": "recon",
-          "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+          "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
           "evidence": {
             "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
             "statusCode": 200
           },
           "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
-          "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+          "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
           "remediationSteps": [
-            "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+            "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
           ],
           "status": "open",
           "createdAt": "2026-08-07T14:57:24.132Z",
@@ -787,9 +787,9 @@
           "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
           "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
           "remediationSteps": [
-            "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-            "AÃ±adir X-Frame-Options: DENY",
-            "AÃ±adir X-Content-Type-Options: nosniff"
+            "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+            "AÃÂ±adir X-Frame-Options: DENY",
+            "AÃÂ±adir X-Content-Type-Options: nosniff"
           ],
           "status": "open",
           "createdAt": "2026-08-07T14:57:21.736Z",
@@ -803,15 +803,15 @@
           "severity": "MEDIUM",
           "cvssScore": 6.5,
           "stingerModule": "recon",
-          "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+          "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
           "evidence": {
             "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
             "statusCode": 200
           },
           "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
-          "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+          "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
           "remediationSteps": [
-            "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+            "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
           ],
           "status": "open",
           "createdAt": "2026-08-07T14:57:21.737Z",
@@ -852,9 +852,9 @@
           "pocMarkdown": "curl -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
           "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
           "remediationSteps": [
-            "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-            "AÃ±adir X-Frame-Options: DENY",
-            "AÃ±adir X-Content-Type-Options: nosniff"
+            "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+            "AÃÂ±adir X-Frame-Options: DENY",
+            "AÃÂ±adir X-Content-Type-Options: nosniff"
           ],
           "status": "open",
           "createdAt": "2026-08-07T14:57:04.261Z",
@@ -868,15 +868,15 @@
           "severity": "MEDIUM",
           "cvssScore": 6.5,
           "stingerModule": "recon",
-          "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+          "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
           "evidence": {
             "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
             "statusCode": 200
           },
           "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
-          "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+          "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
           "remediationSteps": [
-            "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+            "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
           ],
           "status": "open",
           "createdAt": "2026-08-07T14:57:04.261Z",
@@ -917,9 +917,9 @@
           "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
           "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
           "remediationSteps": [
-            "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-            "AÃ±adir X-Frame-Options: DENY",
-            "AÃ±adir X-Content-Type-Options: nosniff"
+            "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+            "AÃÂ±adir X-Frame-Options: DENY",
+            "AÃÂ±adir X-Content-Type-Options: nosniff"
           ],
           "status": "open",
           "createdAt": "2026-08-07T14:57:01.307Z",
@@ -933,15 +933,15 @@
           "severity": "MEDIUM",
           "cvssScore": 6.5,
           "stingerModule": "recon",
-          "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+          "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
           "evidence": {
             "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
             "statusCode": 200
           },
           "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
-          "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+          "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
           "remediationSteps": [
-            "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+            "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
           ],
           "status": "open",
           "createdAt": "2026-08-07T14:57:01.307Z",
@@ -982,9 +982,9 @@
           "pocMarkdown": "curl -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
           "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
           "remediationSteps": [
-            "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-            "AÃ±adir X-Frame-Options: DENY",
-            "AÃ±adir X-Content-Type-Options: nosniff"
+            "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+            "AÃÂ±adir X-Frame-Options: DENY",
+            "AÃÂ±adir X-Content-Type-Options: nosniff"
           ],
           "status": "open",
           "createdAt": "2026-08-07T14:17:51.160Z",
@@ -998,15 +998,15 @@
           "severity": "MEDIUM",
           "cvssScore": 6.5,
           "stingerModule": "recon",
-          "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+          "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
           "evidence": {
             "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
             "statusCode": 200
           },
           "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
-          "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+          "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
           "remediationSteps": [
-            "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+            "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
           ],
           "status": "open",
           "createdAt": "2026-08-07T14:17:51.161Z",
@@ -1047,9 +1047,9 @@
           "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
           "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
           "remediationSteps": [
-            "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-            "AÃ±adir X-Frame-Options: DENY",
-            "AÃ±adir X-Content-Type-Options: nosniff"
+            "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+            "AÃÂ±adir X-Frame-Options: DENY",
+            "AÃÂ±adir X-Content-Type-Options: nosniff"
           ],
           "status": "open",
           "createdAt": "2026-08-07T14:17:48.611Z",
@@ -1063,15 +1063,15 @@
           "severity": "MEDIUM",
           "cvssScore": 6.5,
           "stingerModule": "recon",
-          "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+          "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
           "evidence": {
             "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
             "statusCode": 200
           },
           "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
-          "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+          "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
           "remediationSteps": [
-            "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+            "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
           ],
           "status": "open",
           "createdAt": "2026-08-07T14:17:48.611Z",
@@ -1112,9 +1112,9 @@
           "pocMarkdown": "curl -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
           "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
           "remediationSteps": [
-            "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-            "AÃ±adir X-Frame-Options: DENY",
-            "AÃ±adir X-Content-Type-Options: nosniff"
+            "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+            "AÃÂ±adir X-Frame-Options: DENY",
+            "AÃÂ±adir X-Content-Type-Options: nosniff"
           ],
           "status": "open",
           "createdAt": "2026-08-07T11:25:19.830Z",
@@ -1128,15 +1128,15 @@
           "severity": "MEDIUM",
           "cvssScore": 6.5,
           "stingerModule": "recon",
-          "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+          "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
           "evidence": {
             "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
             "statusCode": 200
           },
           "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
-          "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+          "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
           "remediationSteps": [
-            "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+            "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
           ],
           "status": "open",
           "createdAt": "2026-08-07T11:25:19.830Z",
@@ -1177,9 +1177,9 @@
           "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
           "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
           "remediationSteps": [
-            "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-            "AÃ±adir X-Frame-Options: DENY",
-            "AÃ±adir X-Content-Type-Options: nosniff"
+            "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+            "AÃÂ±adir X-Frame-Options: DENY",
+            "AÃÂ±adir X-Content-Type-Options: nosniff"
           ],
           "status": "open",
           "createdAt": "2026-08-07T11:25:17.364Z",
@@ -1193,15 +1193,15 @@
           "severity": "MEDIUM",
           "cvssScore": 6.5,
           "stingerModule": "recon",
-          "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+          "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
           "evidence": {
             "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
             "statusCode": 200
           },
           "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
-          "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+          "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
           "remediationSteps": [
-            "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+            "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
           ],
           "status": "open",
           "createdAt": "2026-08-07T11:25:17.364Z",
@@ -1242,9 +1242,9 @@
           "pocMarkdown": "curl -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
           "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
           "remediationSteps": [
-            "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-            "AÃ±adir X-Frame-Options: DENY",
-            "AÃ±adir X-Content-Type-Options: nosniff"
+            "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+            "AÃÂ±adir X-Frame-Options: DENY",
+            "AÃÂ±adir X-Content-Type-Options: nosniff"
           ],
           "status": "open",
           "createdAt": "2026-08-07T11:25:03.887Z",
@@ -1258,15 +1258,15 @@
           "severity": "MEDIUM",
           "cvssScore": 6.5,
           "stingerModule": "recon",
-          "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+          "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
           "evidence": {
             "endpoint": "https://amglogicalis.github.io/ballom-repo-public/",
             "statusCode": 200
           },
           "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/ballom-repo-public/\"",
-          "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+          "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
           "remediationSteps": [
-            "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+            "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
           ],
           "status": "open",
           "createdAt": "2026-08-07T11:25:03.887Z",
@@ -1307,9 +1307,9 @@
           "pocMarkdown": "curl -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
           "suggestedPatch": "Configurar en el servidor web o CDN las cabeceras HSTS, CSP estricta, X-Frame-Options DENY y X-Content-Type-Options nosniff.",
           "remediationSteps": [
-            "AÃ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
-            "AÃ±adir X-Frame-Options: DENY",
-            "AÃ±adir X-Content-Type-Options: nosniff"
+            "AÃÂ±adir Strict-Transport-Security: max-age=31536000; includeSubDomains",
+            "AÃÂ±adir X-Frame-Options: DENY",
+            "AÃÂ±adir X-Content-Type-Options: nosniff"
           ],
           "status": "open",
           "createdAt": "2026-08-07T11:25:01.510Z",
@@ -1323,15 +1323,15 @@
           "severity": "MEDIUM",
           "cvssScore": 6.5,
           "stingerModule": "recon",
-          "description": "La cabecera Access-Control-Allow-Origin estÃ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
+          "description": "La cabecera Access-Control-Allow-Origin estÃÂ¡ configurada como \"*\", permitiendo a cualquier origen web leer la respuesta.",
           "evidence": {
             "endpoint": "https://amglogicalis.github.io/webbl-repo-public/",
             "statusCode": 200
           },
           "pocMarkdown": "curl -H \"Origin: https://evil.com\" -I \"https://amglogicalis.github.io/webbl-repo-public/\"",
-          "suggestedPatch": "Restringir los orÃ­genes CORS permitidos en la configuraciÃ³n de la API.",
+          "suggestedPatch": "Restringir los orÃÂ­genes CORS permitidos en la configuraciÃÂ³n de la API.",
           "remediationSteps": [
-            "Configurar orÃ­genes especÃ­ficos en Access-Control-Allow-Origin."
+            "Configurar orÃÂ­genes especÃÂ­ficos en Access-Control-Allow-Origin."
           ],
           "status": "open",
           "createdAt": "2026-08-07T11:25:01.510Z",
@@ -1380,9 +1380,9 @@
     }
   },
   "colonySubscription": {
-    "isSubscribed": false,
-    "subscribedAt": "2026-08-07T23:26:44.334Z",
-    "anonymousId": "waisp_anon_7flpyk8c",
+    "isSubscribed": true,
+    "subscribedAt": "2026-08-08T18:41:35.267Z",
+    "anonymousId": "waisp_anon_a3solq27",
     "localImmunityRules": {}
   },
   "pheromones": {
@@ -1396,7 +1396,18 @@
         "BLOCK_SSRF_AWS_METADATA_IP_198.51.X.X"
       ],
       "timestamp": "2026-08-07T23:26:44.335Z"
+    },
+    "sig-79g8gh": {
+      "id": "sig-79g8gh",
+      "threatHash": "ph_50wqzish",
+      "vulnType": "SSRF_METADATA_EXFILTRATION",
+      "riskScore": 9.2,
+      "encryptedSourceIp": "198.51.*.*",
+      "immunityRules": [
+        "BLOCK_SSRF_AWS_METADATA_IP_198.51.X.X"
+      ],
+      "timestamp": "2026-08-08T18:41:35.267Z"
     }
   },
-  "updatedAt": "2026-08-07T23:26:56.277Z"
+  "updatedAt": "2026-08-08T18:41:35.282Z"
 }
