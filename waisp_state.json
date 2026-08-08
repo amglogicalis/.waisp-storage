@@ -1496,41 +1496,22 @@
     "subscribedAt": "2026-08-08T18:41:35.267Z",
     "anonymousId": "waisp_anon_a3solq27",
     "localImmunityRules": {
-      "ph_cjauoslc": "BLOCK_SSRF_AWS_METADATA_IP_198.51.X.X"
+      "ph_cjauoslc": "BLOCK_SSRF_AWS_METADATA_IP_198.51.X.X",
+      "ph_50wqzish": "BLOCK_SSRF_AWS_METADATA_IP_198.51.X.X"
     },
     "appliedRules": {
       "ph_cjauoslc": {
         "ruleCode": "# Real Production Security Directive\ndeny 198.51.0.0/16;\nHeader set Content-Security-Policy \"default-src 'self'\";",
         "appliedAt": "2026-08-08T19:05:43.581Z",
         "providerSyntax": "Cloudflare WAF / Nginx Security Directives"
+      },
+      "ph_50wqzish": {
+        "ruleCode": "# Real Production Security Directive\ndeny 198.51.0.0/16;\nHeader set Content-Security-Policy \"default-src 'self'\";",
+        "appliedAt": "2026-08-08T19:05:44.165Z",
+        "providerSyntax": "Cloudflare WAF / Nginx Security Directives"
       }
     }
   },
-  "pheromones": {
-    "sig-je47pq": {
-      "id": "sig-je47pq",
-      "threatHash": "ph_cjauoslc",
-      "vulnType": "SSRF_METADATA_EXFILTRATION",
-      "riskScore": 9.2,
-      "encryptedSourceIp": "198.51.*.*",
-      "immunityRules": [
-        "BLOCK_SSRF_AWS_METADATA_IP_198.51.X.X"
-      ],
-      "timestamp": "2026-08-07T23:26:44.335Z",
-      "isApplied": true
-    },
-    "sig-79g8gh": {
-      "id": "sig-79g8gh",
-      "threatHash": "ph_50wqzish",
-      "vulnType": "SSRF_METADATA_EXFILTRATION",
-      "riskScore": 9.2,
-      "encryptedSourceIp": "198.51.*.*",
-      "immunityRules": [
-        "BLOCK_SSRF_AWS_METADATA_IP_198.51.X.X"
-      ],
-      "timestamp": "2026-08-08T18:41:35.267Z",
-      "isApplied": false
-    }
-  },
-  "updatedAt": "2026-08-08T19:05:44.146Z"
+  "pheromones": {},
+  "updatedAt": "2026-08-08T19:05:45.800Z"
 }
